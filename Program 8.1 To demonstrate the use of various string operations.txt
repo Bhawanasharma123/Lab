@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char str1[30],str2[30];
+    int n;
+    printf("Enter the first string\n");
+    gets(str1);
+    printf("Enter the second string\n");
+    gets(str2);
+    n=strlen(str1);
+    printf("Length of the string is %d\n",n);
+    n=strcmp(str1,str2);
+    printf("comparison is %d\n",n);
+    strcat(str1,str2);
+    printf("\n concatinated string is %s",str1);
+    strcpy(str2,str1);
+    printf("The copied string is %s",str1);
+}
