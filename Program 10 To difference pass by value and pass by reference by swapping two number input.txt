@@ -1,0 +1,25 @@
+#include<stdio.h>
+void swap(int a,int b)
+{
+    int temp=a;
+    a=b;
+    b=temp;
+    printf("After swapping pass by value num1=%d ,num2=%d\n",a,b);
+}
+void swap1(int*a,int*b){
+int temp=*a;
+*a=*b;
+}
+
+    int main(){
+        int num1,num2;
+        printf("Enter the value of num1:");
+        scanf("%d",&num1);
+        printf("Enter the value of num2:");
+        scanf("%d",&num2);
+        printf("Before swapping :num1=%d ,num2=%d\n",num1,num2);
+        swap(num1,num2);
+        swap1(num1,num2);
+        printf("After swapping using pass by value and pass by reference:num1=%d ,num2=%d\n",num1,num2);
+        return 0;
+    }
